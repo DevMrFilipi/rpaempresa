@@ -1,0 +1,5 @@
+C:\Users\PdfWriterApp\obj\Release\net8.0\PdfWriterApp.csproj.AssemblyReference.cache
+C:\Users\PdfWriterApp\obj\Release\net8.0\PdfWriterApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PdfWriterApp\obj\Release\net8.0\PdfWriterApp.AssemblyInfoInputs.cache
+C:\Users\PdfWriterApp\obj\Release\net8.0\PdfWriterApp.AssemblyInfo.cs
+C:\Users\PdfWriterApp\obj\Release\net8.0\PdfWriterApp.csproj.CoreCompileInputs.cache

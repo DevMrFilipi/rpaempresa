@@ -1,0 +1,92 @@
+{
+    "movimentacao": {
+        "ATIVO": {"botao": "Button1"},
+        "RESERVADO": {"botao": "Button2"},
+    },
+    "localidade": {
+        "SAO FIDELIS": {"botao": "Button16", "Text49": "SAO FIDELIS"},
+        "PUREZA": {"botao": "Button16", "Text49": "SAO FIDELIS"},
+        "NATIVIDADE": {"botao": "Button10", "Text49": "NATIVIDADE"},
+        "SAO JOSE DE UBA": {"botao": "Button21", "Text49": "SAO JOSE DE UBA"},
+        "CARAPEBUS": {"botao": "Button6", "Text49": "CARAPEBUS"},
+        "VASSOURAS": {"botao": "Button20", "Text49": "VASSOURAS"},
+        "TRAJANO DE MORAES": {"botao": "Button19", "Text49": "TRAJANO DE MORAIS"},
+        "SUMIDOURO": {"botao": "Button18", "Text49": "SUMIDOURO"},
+        "SEROPEDICA": {"botao": "Button17", "Text49": "SEROPEDICA"},
+        "RIO DAS OSTRAS": {"botao": "Button15", "Text49": "RIO DAS OSTRAS"},
+        "RIO CLARO": {"botao": "Button14", "Text49": "RIO CLARO"},
+        "PIRAI": {"botao": "Button14", "Text49": "PIRAI"},
+        "PINHEIRAL": {"botao": "Button13", "Text49": "PINHEIRAL"},
+        "PARACAMBI": {"botao": "Button11", "Text49": "PARACAMBI"},
+        "MACUCO": {"botao": "Button9", "Text49": "MACUCO"},
+        "ITAGUAI": {"botao": "Button9", "Text49": "ITAGUAI"},
+        "CARMO": {"botao": "Button7", "Text49": "CARMO"},
+        "BOM JARDIM": {"botao": "Button5", "Text49": "BOM JARDIM"},
+        "CAMPO GRANDE": {"botao": "Button4", "Text49": "CAMPO GRANDE"},
+        "BARRA DA TIJUCA": {"botao": "Button3", "Text49": "BARRA DA TIJUCA"},
+    },
+    "tipo_equipamento": {
+        "DESKTOP": {
+            "botao": "Button24",
+            "Text32": "${tipo_equipamento}",
+            "Text37": "DELL",
+            "Text41": "${data_equipamento}",
+            "Text45": "${patrimonio_computador}"
+        },
+        "NOTEBOOK": {
+            "botao": "Button23",
+            "Text32": "${tipo_equipamento}",
+            "Text37": "DELL",
+            "Text41": "${data_equipamento}",
+            "Text45": "${patrimonio_computador}"
+        },
+        "MONITORES": {
+            "MONITOR_UM": {
+                "botao": "Button30",
+                "Text33": "MONITOR",
+                "Text38": "DELL",
+                "Text42": "${data_monitor_um}",  
+                "Text46": "${patrimonio_monitor_um}",
+            },
+            "MONITOR_DOIS": {
+                "Text35": "MONITOR",
+                "Text39": "DELL",
+                "Text43": "${data_monitor_dois}",  
+                "Text47": "${patrimonio_monitor_dois}",
+            }
+        },
+        "DOCKSTATION": {
+            "botao": "Button29",
+            "Text36": "DOCKSTATION",
+            "Text40": "DELL",
+            "Text44": "${data_dockstation}",
+        }
+    },
+    "perifericos": {
+        "TECLADO": {
+            "botao": "Button31"
+        },
+        "MOUSE": {
+            "botao": "Button27"
+        },
+        "KIT MOUSE TECLADO S/ FIO": {
+            "botao": "Button26"
+        },
+        "HEADPHONE": {
+            "botao": "Button25"
+        },
+        "MOCHILA": {
+            "botao": "Button22"
+        },
+
+    },
+    "data_pdf": {
+        "Text52": "${day}",
+        "Text50": "${month}",
+        "Text51": "${year}",
+    },
+    "assinatura":{
+        "Text53": "${usuario}",
+        "Text54": "${userAdmin}"
+    },
+}
