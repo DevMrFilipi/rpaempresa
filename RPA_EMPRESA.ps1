@@ -56,7 +56,8 @@ function operationOneUser
     }
 
     Get-ADUser -Identity $userAd
-
+    
+    $userOrgUnit = getUserOrgUnit($userAd)
     $userGroups = getUserGroups($userAd)
 
     $acoes = @(
@@ -892,11 +893,15 @@ A/C: ${UserAdmin}" -Force
             $arrServiceTagMonitor = @()
 
             getMonitores("") | ForEach-Object {
-                $infoMonitores = @($_.ToUpper())
-                $modeloMon, $serviceTagMon = $_.Split("_").ToUpper()
-                $arrModeloMonitor += $modeloMon
-                $arrServiceTagMonitor += $serviceTagMon
-                Write-Host $infoMonitores $arrModeloMonitor $arrServiceTagMonitor
+            
+                for ($i = 0; $i -lt $monitores.Count; $i++)
+                {
+                 $modeloMon, $serviceTagMon = @($monitores[$i].Split("_"))
+                 $arrModeloMonitor += $modeloMon
+                 $arrServiceTagMonitor += $serviceTagMon
+                }
+
+                Write-Host $arrModeloMonitor $arrServiceTagMonitor
             }
         } else {
             $arrModeloMonitor = @()
@@ -1406,6 +1411,22 @@ function getMonitores()
         }
     }
     getMonitores("")
+}
+
+function getUserOrgUnit ($userAd)
+{
+    $dataUser = Get-ADUser -Identity $userAd
+
+    if ($dataUser -eq "")
+    {
+        $entryAlert = @("Nenhum unidade organizacional encontrada. Contate o Supervisor Direto.", 'Error')
+        alertMessage($entryAlert)
+    } else 
+    {
+        $userOus = $dataUser -split ','
+        $entryAlert = @($userOus, "OU", 'Information')
+        alertMessage($entryAlert)
+    }
 }
 
 function getUserGroups ($userAd)
